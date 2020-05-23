@@ -1,8 +1,10 @@
 h1{
-color:red;
-  
+    color: red;
 }
 .book-title{
-        background-color: bisque;
-    }
-    
+    background-color: bisque;
+}
+.description{
+    background-color: aquamarine;
+    font-size: smaller;
+}
