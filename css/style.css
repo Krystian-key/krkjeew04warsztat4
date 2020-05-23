@@ -1,10 +1,17 @@
-h1{
+h1 {
     color: red;
 }
-.book-title{
+
+.book-title {
     background-color: bisque;
 }
-.description{
+
+.description {
     background-color: aquamarine;
     font-size: smaller;
+    display: none;
+}
+
+.delete-book-btn {
+    background-color: hotpink;
 }
