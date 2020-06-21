@@ -92,7 +92,7 @@ $(function(){
 
         var thisTitle = $(this).parent();
         var id = thisTitle.data("id");
-        var url = "http://localhost:8282/books/helloBook" + id;
+        var url = "http://localhost:8282/books" + id;
 
         sendGenericRequest(url, "DELETE", undefined, refreshBookList);
     } // handleDelBtnClick
