@@ -1,7 +1,7 @@
 $(function(){
     // add new book using cURL:
     // curl -X POST -i -H "Content-Type: application/json" -d '{"isbn":"34321","title":"Potop","publisher":"Ossolineum","type":"beletrystyka","author":"Sienkiewicz"}' http://localhost:8282/books
-
+    
     var bookListDiv = $(".book-list");
     bookListDiv.on("click", ".book-title", handleTitleClick);
     bookListDiv.on("click", ".delete-book-btn", handleDelBtnClick);
@@ -92,7 +92,7 @@ $(function(){
 
         var thisTitle = $(this).parent();
         var id = thisTitle.data("id");
-        var url = "http://localhost:8282/books/" + id;
+        var url = "http://localhost:8282/books/helloBook" + id;
 
         sendGenericRequest(url, "DELETE", undefined, refreshBookList);
     } // handleDelBtnClick
